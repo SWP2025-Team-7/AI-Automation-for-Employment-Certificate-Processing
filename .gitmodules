@@ -1,0 +1,6 @@
+[submodule "Telegram-Bot"]
+	path = Telegram-Bot
+	url = https://github.com/SWP2025-Team-7/Telegram-Bot.git
+[submodule "Telegram-Bot-Backend"]
+	path = Telegram-Bot-Backend
+	url = https://github.com/SWP2025-Team-7/Telegram-Bot-Backend.git
