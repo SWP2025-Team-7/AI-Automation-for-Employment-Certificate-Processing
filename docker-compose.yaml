@@ -1,0 +1,29 @@
+version: '3.8'
+
+services:
+
+  bot-backend:
+    container_name: bot-backend
+    build:
+      context: ./Telegram-Bot-Backend
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - 8000:8000
+    environment:
+      ENV: production
+    command: uvicorn bot_backend.backend_api:app --host 0.0.0.0 --port 8000
+
+  bot:
+    container_name: telegram-bot
+    build:
+      context: ./Telegram-Bot
+      dockerfile: Dockerfile
+    restart: always
+    depends_on:
+      - bot-backend
+    # env_file:
+    #   - ./Telegram-Bot/.env
+    # environment:
+    #   - BACKEND_URL: ${BOT_BACKEND_URL}
+    command: python bot/main.py
