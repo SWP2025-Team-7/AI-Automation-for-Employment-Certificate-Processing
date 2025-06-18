@@ -5,10 +5,16 @@ networks:
 
 services:
 
-  bot-backend:
-    container_name: bot-backend
+  # db:
+  #   image: postgres
+  #   volumes:
+  #     postgres_data:/var/lib/postgresql/data
+  #   env_file: 
+
+  backend:
+    container_name: backend
     build:
-      context: ./Telegram-Bot-Backend
+      context: ./Backend
       dockerfile: Dockerfile
     restart: unless-stopped
     networks:
@@ -16,19 +22,22 @@ services:
     expose:
       - "8000"
     env_file:
-      - ./Telegram-Bot-Backend/.env
-    command: uvicorn bot_backend.backend_api:app --host 0.0.0.0 --port 8000
+      - ./Backend/.env
+    command: uvicorn backend.backend_api:app --host 0.0.0.0 --port 8000
 
   bot:
     container_name: bot
     build:
-      context: ./Telegram-Bot
+      context: ./Bot
       dockerfile: Dockerfile
     restart: unless-stopped
     networks:
       - bot
     depends_on:
-      - bot-backend
+      - backend
     env_file:
-       - ./Telegram-Bot/.env
+       - ./Bot/.env
     command: python bot/main.py
+
+# volumes:
+#   postgres_data:
