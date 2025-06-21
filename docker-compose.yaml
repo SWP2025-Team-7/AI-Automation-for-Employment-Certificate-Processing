@@ -6,7 +6,6 @@ networks:
     external: false
 
 services:
-
   db:
     image: postgres
     networks:
