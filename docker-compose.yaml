@@ -41,7 +41,7 @@ services:
         condition: service_healthy
     env_file:
       - ./Backend/.env
-    command: uvicorn backend.backend_api:app --host 0.0.0.0 --port 8000
+    # command: alembic upgrade head && uvicorn backend.backend_api:app --host 0.0.0.0 --port 8000
 
   bot:
     container_name: bot
