@@ -4,5 +4,5 @@
 	branch = main
 [submodule "Backend"]
 	path = Backend
-	url = git@github.com:SWP2025-Team-7/Backend.git
+	url = https://github.com/SWP2025-Team-7/Backend.git
 	branch = main
