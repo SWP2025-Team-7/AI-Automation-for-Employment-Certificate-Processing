@@ -6,13 +6,13 @@ This document describes the key quality attributes of the **AI Automation for Em
 
 ## 1. Reliability
 
-**Scenario:** OCR Service Failure
+**Scenario:** "Problem"
 
-* **Context:** A batch of 5 PDF documents is submitted via the Telegram Bot.
-* **Stimulus:** One call to the external OCR API returns a 5xx error.
+* **Context:** "What happened before the problem"
+* **Stimulus:** "Reason"
 * **Environment:** Docker containers orchestrated by `docker-compose` (configuration in Core).
-* **Artifact:** `backend/ocr_worker.py` module.
-* **Response:**
+* **Artifact:** "Where problem is, for example:" `backend/ocr_worker.py` module.
+* **Response:** "What should the program do:"
 
   1. Retry the request up to 3 times.
   2. If still failing, rollback the database transaction and enqueue the task for a retry.
