@@ -3,3 +3,4 @@
 - Recommend code corrections or alternative implementations.
 - Offer explanations for specific framework behaviors or syntax issues.
 - Help refactor problematic functions without altering the logic.
+### Assignment 1
