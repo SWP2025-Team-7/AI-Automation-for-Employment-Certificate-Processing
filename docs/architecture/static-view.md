@@ -4,5 +4,5 @@
 
 Below is diagram that shows options of using the tool:
 
-![Use Case Diagram](images/use-case-diagram.png)
+![Use Case Diagram](images/use-case-diagram.jpg)
 
