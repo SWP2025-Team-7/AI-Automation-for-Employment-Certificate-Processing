@@ -1,6 +1,20 @@
-## In each assignment, AI was consulted when we encountered bugs, errors, or unexpected behavior in our code. Instead of spending excessive time manually tracing issues, we used AI to:
-- Interpret error messages and suggest likely causes.
-- Recommend code corrections or alternative implementations.
-- Offer explanations for specific framework behaviors or syntax issues.
-- Help refactor problematic functions without altering the logic.
 ## Assignment 1
+AI was not used in this assignment. All work was completed manually by the team.
+
+## Assignment 2
+AI was used to find relevant coding resources and assist in identifying and resolving bugs in the code.
+
+## Assignment 3
+Similar to Assignment 2, AI was used to gather programming references and help fix bugs that occurred during development.
+
+## Assignment 4
+AI was used to search for technical information and troubleshoot bugs in the implementation.
+
+## Assignment 5
+AI supported us in finding documentation and resolving issues in the code by providing debugging suggestions.
+
+## Assignment 6
+AI was used extensively to debug errors and to understand the frameworks we were using, especially when dealing with configuration and compatibility issues.
+
+## Assignment 7
+AI was again used to fix bugs and clarify implementation details related to the technologies involved in the project.
