@@ -1,3 +1,4 @@
+## Throughout the assignments, AI tools (such as ChatGPT) were used primarily to debug code, understand error messages, and find relevant programming information. This helped improve our efficiency and problem-solving, especially when working with unfamiliar technologies.
 ## Assignment 1
 AI was not used in this assignment. All work was completed manually by the team.
 
